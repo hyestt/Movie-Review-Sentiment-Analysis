@@ -3,8 +3,7 @@ https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews
 
 ### Dataset
 IMDB sentiment analysis data set, which has 100,000 multi-paragraph movie reviews, both positive and negative. 
-The dataset has 50,000 rows (i.e., reviews) and 3 columns. Column 1 "new_id" is the ID for each review (same as the row number), 
-Column 2 "sentiment" is the binary response, and Column 3 is the review. 
+The dataset has 50,000 rows (i.e., reviews) and 3 columns. Column 1 "new_id" is the ID for each review (same as the row number), Column 2 "sentiment" is the binary response, and Column 3 is the review. 
 
 ### Target
 Evaluation metric is AUC on the test data.
@@ -17,6 +16,7 @@ Word2Vec attempts to understand meaning and semantic relationships among words.
 Save my main file as mymain.ipynb
 
 ### Data Preprocessing 
+Select s to determine which train and test split (S = 1 or 2 or 3). Then I left join split data and generate different training and test dataset. Last, I store all the preprocessing in train_list and test_list
 
 ### Vocabulary list and text processing
 First, I create the function review_to_words to remove any non-letters and stopwords in review. 
