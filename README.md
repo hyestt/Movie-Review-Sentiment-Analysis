@@ -34,10 +34,13 @@ According to evaluation matrix, the best performance I reached is 0.94489. I’v
 Then, I draw AUC graph based on predicted result.
 
 AUC (train and test split 1)
+
 ![alt text](https://github.com/hyestt/Movie-Review-Sentiment-Analysis/blob/master/1.png)
 
 AUC (train and test split 2)
+
 ![alt text](https://github.com/hyestt/Movie-Review-Sentiment-Analysis/blob/master/2.png)
 
 AUC (train and test split 3)
+
 ![alt text](https://github.com/hyestt/Movie-Review-Sentiment-Analysis/blob/master/3.png)
