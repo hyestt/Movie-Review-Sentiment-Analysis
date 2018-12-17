@@ -23,16 +23,21 @@ First, I create the function review_to_words to remove any non-letters and stopw
 Then I import Tokenizer from keras and set the max_feature to 5000. Before I split the data into different training and test dataset, 
 I use whole dataset to fit Tokenizer. You can find the most 5000 frequent vocabularies in myVocab.txt file.
 
-![alt text]()
+![alt text](https://github.com/hyestt/Movie-Review-Sentiment-Analysis/blob/master/word.png)
 
 ### Model Prediction 
-Fit LSTM model and do the text processing
-LSTM model is units of a recurrent neural network (RNN). The parameter turning is refered to the reference from Kaggle’s kernel. 
-Use the tokenizer we trained before, we can convert the text in review to sequence. Then use pad_sequence to transforms a list of sequence into a 2D numpy array. 
+Use Logistic regression, random forest and LSTM model to make the prediction. It turns out LSTM can reach the best performance. Fit LSTM model and do the text processing. LSTM model is units of a recurrent neural network (RNN). The parameter turning is refered to the reference from Kaggle’s kernel. Use the tokenizer we trained before, we can convert the text in review to sequence. Then use pad_sequence to transforms a list of sequence into a 2D numpy array. 
 The activation function I use is sigmoid and I use Adam optimizer.
 
 ### Result 
 According to evaluation matrix, the best performance I reached is 0.94489. I’ve saved all the result in result.txt file. 
 Then, I draw AUC graph based on predicted result.
 
-![alt text]()
+AUC (train and test split 1)
+![alt text](https://github.com/hyestt/Movie-Review-Sentiment-Analysis/blob/master/1.png)
+
+AUC (train and test split 2)
+![alt text](https://github.com/hyestt/Movie-Review-Sentiment-Analysis/blob/master/2.png)
+
+AUC (train and test split 3)
+![alt text](https://github.com/hyestt/Movie-Review-Sentiment-Analysis/blob/master/3.png)
